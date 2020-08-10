@@ -367,6 +367,7 @@ bool GPU_HW_OpenGL::CompilePrograms()
               {
                 prog.BindAttribute(2, "a_texcoord");
                 prog.BindAttribute(3, "a_texpage");
+                prog.BindAttribute(4, "a_uv_limits");
               }
 
               if (!IsGLES() || m_supports_dual_source_blend)
